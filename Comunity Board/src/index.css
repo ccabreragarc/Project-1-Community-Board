@@ -1,0 +1,18 @@
+.dad-joke-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .dad-joke-chunk {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .dad-joke-item {
+    width: 30%; /* Adjust the width as needed */
+    margin: 10px;
+    /* Other styles for dad joke item */
+  }
+  
