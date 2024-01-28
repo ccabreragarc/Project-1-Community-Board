@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 3rem;
+}
+
+.food-truck-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.food-truck-item {
+  width: 300px;
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.food-truck-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.view-menu-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.view-menu-button:hover {
+  background-color: #0056b3;
+}
