@@ -24,7 +24,7 @@ const App = () => {
     "Food Jokes": "I'm on a seafood diet. I see food and I eat it.",
     "Music Jokes": "Why did the musician get locked out of their house? Because they left the keys in the piano!",
     "Occupation Jokes": "Why don't scientists trust atoms? Because they make up everything!",
-    "Science Jokes": "Did you hear about the famous microbiologist who visited 30 different countries and spoke 6 languages? He was a man of many cultures.",
+    "Science Jokes": "Why can't you trust an atom? Because they make up everything!",
     "Math Jokes": "Why was the math book sad? Because it had too many problems.",
     "Sports Jokes": "Why did the golfer bring two pairs of pants? In case he got a hole in one.",
     "History Jokes": "I asked my history teacher how he liked his new job. He said it's all in the past.",

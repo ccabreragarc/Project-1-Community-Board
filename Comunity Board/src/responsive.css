@@ -1,0 +1,28 @@
+/* Responsive Styles */
+
+/* For small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .dad-joke-container, .food-truck-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dad-joke-item, .food-truck-item {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+/* For medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .dad-joke-item, .food-truck-item {
+        width: 45%;
+    }
+}
+
+/* For large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .dad-joke-item, .food-truck-item {
+        width: 30%;
+    }
+}
