@@ -1,0 +1,1120 @@
+<!DOCTYPE html><html lang="en-US"><head><title>Unit 1 - WEB102 | Intermediate Web Development | CodePath Courses</title><link href="/assets-compiled/application.css?v=5955841a" rel="stylesheet" type="text/css" /><link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /><link href="/skins/codepath?version=1694702531.css" rel="stylesheet" type="text/css" /><meta charset="UTF-8" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-06cb56c71ff89e98597","applicationID":"1481572453","transactionName":"dFpbEkQJClhQRhoyDVlUQRRXSSpRVEZbCApQZVoUQgcKDg91RRFLcHBhRlUJE0ZGUUZOXlRaQBRFA0lBW11BTl5CW1wS","queueTime":0,"applicationTime":305,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1588907617",accountID:"4100005",trustKey:"4100005",xpid:"UAcHUVZTDRABUFlTAgYFUlEC",licenseKey:"NRJS-06cb56c71ff89e98597",applicationID:"1481572453"};;/*! For license information please see nr-loader-spa-1.252.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>m,Mt:()=>b,C5:()=>s,DL:()=>w,OP:()=>D,lF:()=>O,Yu:()=>E,Dg:()=>v,CX:()=>c,GE:()=>x,sU:()=>N});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",h=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},g="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(g);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function v(e,t){if(!e)throw new Error(g);p[e]=(0,i.D)(t,h());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(g);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!A[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return A[e]}function x(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const E=(0,n.mF)().o;var _=r(385),T=r(6818);const S={buildEnv:T.Re,customTransaction:void 0,disabled:!1,distMethod:T.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(_._A?.performance?.timeOrigin||_._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+_._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof _._A.XMLHttpRequest?.prototype?.addEventListener,version:T.q4,denyList:void 0},R={};function D(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!R[e])throw new Error("Runtime for ".concat(e," was never set"));return R[e]}function N(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");R[e]=(0,i.D)(t,S);const r=(0,n.ek)(e);r&&(r.runtime=R[e])}function O(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,lF:()=>a,q4:()=>n});const n="1.252.0",i="PROD",o="CDN",a="2.0.0-alpha.11"},385:(e,t,r)=>{"use strict";r.d(t,{FN:()=>c,IF:()=>l,LW:()=>a,Nk:()=>h,Tt:()=>u,_A:()=>o,cv:()=>p,iS:()=>s,il:()=>n,ux:()=>d,v6:()=>i,w1:()=>f});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a="complete"===o?.document?.readyState,s=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Boolean(n&&window.document.documentMode),h=!!o.navigator?.sendBeacon,p=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(u(e),!e||!s[e].get(t)||r)return c(t);s[e].get(t).staged=!0;const a=[...s[e]];function c(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}a.every((e=>{let[t,r]=e;return r.staged}))&&(a.sort(((e,t)=>e[1].priority-t[1].priority)),a.forEach((t=>{let[r]=t;s[e].delete(r),c(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var h={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=m(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([h,e,r,a]);return a},get:v,listeners:m,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",h.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function g(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(h,t)}function b(){return h.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,Object.keys(u.backlog).forEach((e=>{delete u.backlog[e]}))}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>o,IK:()=>c,oD:()=>i,uT:()=>s,wO:()=>a});const n="NRBA",i=144e5,o=18e5,a={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},s={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{"use strict";r.d(t,{e:()=>i});var n=r(385);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n._A?.location?.protocol&&t.host===n._A?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),o=r(3325),a=r(385);const s="newrelic";const c={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{"use strict";r.d(t,{em:()=>b,u5:()=>R,QU:()=>O,_L:()=>P,Gm:()=>M,Lg:()=>L,BV:()=>Z,Kf:()=>Y});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var A="fetch-",w=A+"body-",x=["arrayBuffer","blob","json","text","formData"],E=f._A.Request,_=f._A.Response,T="prototype";const S={};function R(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(E&&_&&f._A.fetch))return t;if(S[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return S[t.debugId]=1,x.forEach((e=>{r(E[T],e,w),r(_[T],e,w)})),r(f._A,"fetch",A),t.on(A+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(A+"done",[null,r],n)}else t.emit(A+"done",[e],n)})),t}const D={},N=["pushState","replaceState"];function O(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||D[t.debugId]++||(D[t.debugId]=1,c(t).inPlace(window.history,N,"-")),t}var I=r(3239);const j={},C=["appendChild","insertBefore","replaceChild"];function P(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||j[t.debugId])return t;j[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,C,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,I.m$)(!1)),e.removeEventListener("error",f,(0,I.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,I.m$)(!1)),e.removeEventListener("error",f,(0,I.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,I.m$)(!1)),e.addEventListener("error",f,(0,I.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function M(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const H={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(H[t.debugId])return t;H[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const z={},F="setTimeout",B="setInterval",U="clearTimeout",V="-start",q="-",G=[F,"setImmediate",B,U,"clearImmediate"];function Z(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(z[t.debugId]++)return t;z[t.debugId]=1;var r=c(t);return r.inPlace(f._A,G.slice(0,2),F+q),r.inPlace(f._A,G.slice(2,3),B+q),r.inPlace(f._A,G.slice(3),U+q),t.on(B+V,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(F+V,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var W=r(50);const X={},K=["open","send"];function Y(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(X[r.debugId]++)return r;X[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",w)}),(0,I.m$)(!1))}catch(e){(0,W.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",w)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,K,"-xhr-",w),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(A):u?u(A):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(A).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||A()}));function A(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function w(e,t){return t}return r}},7825:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{J0:()=>l,Mi:()=>d,Vb:()=>o,Ye:()=>s,fm:()=>c,i9:()=>a,t9:()=>i,u0:()=>u});var n=r(7056);const i=r(3325).D.sessionReplay,o=.12,a={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},s=1e6,c=64e3,u={[n.IK.ERROR]:15e3,[n.IK.FULL]:3e5,[n.IK.OFF]:0},d={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},l=5e3},3614:(e,t,r)=>{"use strict";r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},7836:(e,t,r)=>{"use strict";r.d(t,{BODY:()=>x,CB_END:()=>E,CB_START:()=>u,END:()=>w,FEATURE_NAME:()=>i,FETCH:()=>T,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>_,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>A,originalSetTimeout:()=>y});var n=r(234);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,A="-start",w="-end",x="-body",E="cb"+w,_="jsTime",T="fetch"},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{"use strict";r.d(t,{j:()=>b});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),h=r(8632);function p(){const e=(0,h.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var g=r(2825);const m=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let v=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:A,info:w,loader_config:x,runtime:E={loaderType:b},exposed:_=!0}=t;const T=(0,h.gG)();w||(A=T.init,w=T.info,x=T.loader_config),(0,i.Dg)(e.agentIdentifier,A||{}),(0,i.GE)(e.agentIdentifier,x||{}),w.jsAttributes??={},d.v6&&(w.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,w);const S=(0,i.P_)(e.agentIdentifier),R=[w.beacon,w.errorBeacon];v||(S.proxy.assets&&(m(S.proxy.assets),R.push(S.proxy.assets)),S.proxy.beacon&&R.push(S.proxy.beacon),p(),(0,h.EZ)("activatedFeatures",g.T)),E.denyList=[...S.ajax.deny_list||[],...S.ajax.block_internal?R:[]],(0,i.sU)(e.agentIdentifier,E),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const h={};var p=a.ee.get(e),g=p.get("tracer"),m="api-",v=m+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),w(m,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{h[e]=w(m,e,!0,"api")})),h.addPageAction=w(m,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=w(m,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,w(m,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},h.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},h.recordReplay=function(){(0,o.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,o.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},h.pauseReplay=function(){(0,o.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,o.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},h.interaction=function(){return(new y).get()};var A=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,o.p)(v+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(g.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw g.emit("fn-err",[arguments,this,e],r),e}finally{g.emit("fn-end",[(0,s.z)()],r)}}}};function w(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function x(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>{(0,l.Z)("Downloading runtime APIs failed..."),(0,c.L)(e,"api",!0)}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{A[e]=w(v,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>x()),!0):x(),h}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=_),v=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.252.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.252.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={111:"sha512-EIHTFh/PyMHLspjr+lbpdxFHzJXOF7HH8nedLZZTJSO0SyJ4rECM57ibYM67sib1O2FH0nhyrm4QKgl30mtD8w==",433:"sha512-wCJ0jwoj4FyJOrl6z7VLilNolSSxqqm/5L08FBzY2sXjVPFpnyu6p3obblBOv9lj2u9awQrvcEGqvjyYflheow==",164:"sha512-we5lwLCaVV8XgmWsFLhIuQ0Ja0mW9HH9YHLBzjhalvM84n3Rpvmg1iFz7BOZeYnHrjU5dcWOHrtqxvdjDNy2ag=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.252.0.PROD"]=self["webpackChunk:NRBA-1.252.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e("recordReplay")}pauseReplay(){return this.#e("pauseReplay")}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,1656));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName,!0),o(!1)}};l.il?(0,d.b2)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var h=i(7633);class p extends f{static featureName=h.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,h.t,r),this.importAggregator()}}var g=i(1117),m=i(1284);class v extends g.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,m.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,m.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=A(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function A(e){return"object"!=typeof e?[]:(0,m.D)(e,w)}function w(e,t){return t}var x=i(8632),E=i(4402),_=i(4351);var T=i(5546),S=i(7956),R=i(3239),D=i(7894),N=i(9251);class O extends f{static featureName=N.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,r),l.il&&((0,S.N)((()=>(0,T.p)("docHidden",[(0,D.z)()],void 0,N.t,this.ee)),!0),(0,R.bP)("pagehide",(()=>(0,T.p)("winPagehide",[(0,D.z)()],void 0,N.t,this.ee))),this.importAggregator())}}var I=i(3081);class j extends f{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}var C=i(6660);class P{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class k extends f{static featureName=C.t;#t=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,C.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#t.has(n)&&(this.#t.add(n),(0,T.p)("err",[this.#r(n),(0,D.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,T.p)("ierr",[this.#r(e),(0,D.z)(),!0],void 0,r.D.jserrors,this.ee)})),l._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,T.p)("err",[this.#n(e),(0,D.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,R.m$)(!1,this.removeOnAbort?.signal)),l._A.addEventListener("error",(e=>{this.abortHandler&&(this.#t.has(e.error)?this.#t.delete(e.error):(0,T.p)("err",[this.#i(e),(0,D.z)()],void 0,r.D.jserrors,this.ee))}),(0,R.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.#t.clear(),this.abortHandler=void 0}#r(e){return e instanceof Error?e:void 0!==e?.message?new P(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new P("string"==typeof e?e:(0,_.P)(e))}#n(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new P(t);const r=this.#r(e.reason);return r.message=t+r.message,r}#i(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new P(e.message,e.filename,e.lineno,e.colno);return t.name=SyntaxError.name,t}return e.error instanceof Error?e.error:new P(e.message,e.filename,e.lineno,e.colno)}}var M=i(2210);let H=1;const L="nr@id";function z(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===l._A?0:(0,M.X)(e,L,(function(){return H++}))}function F(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,_.P)(e).length}catch(e){return}}}var B=i(1214),U=i(7243);class V{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!r||!i)return null;var a=(0,E.M)(),s=(0,E.Ht)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,r,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,r,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof l._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,_.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var o=(0,U.e)(r.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var q=i(7825),G=["load","error","abort","timeout"],Z=G.length,W=n.Yu.REQ,X=n.Yu.XHR;class K extends f{static featureName=q.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,q.t,i),(0,n.OP)(e).xhrWrappable){this.dt=new V(e),this.handler=(e,t,r,n)=>(0,T.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};l._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const n={status:t.responseStatus},i={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};Y(n,t.name),this.handler("xhr",[n,i,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,r.D.ajax)}}))}catch(e){}(0,B.u5)(this.ee),(0,B.Kf)(this.ee),function(e,t,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){E(t,e)}),(0,R.m$)(!1)),l.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,R.m$)(!1))}function s(e){this.params={method:e[0]},Y(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(r.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(r.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&r.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function u(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=F(i);a&&(n.txSize=a)}this.startTime=(0,D.z)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<Z;s++)r.addEventListener(G[s],this.listener,(0,R.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+z(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+z(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,D.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,D.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,D.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&l.il&&(t=""+l._A.location.href):e[0]&&e[0].url?t=e[0].url:l._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,U.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,n)&&(this.dt=n);else{var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function A(e,t){this.params={},this.metrics={},this.startTime=(0,D.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:l._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),Y(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=F(n.body)||0}function w(e,t){var n;this.endTime=(0,D.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,D.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function x(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<Z;o++)e.removeEventListener(G[o],this.listener,!1);t.aborted||(n.duration=(0,D.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):E(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function E(e,n){e.params.status=n.status;var i=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?F(e.response):"text"===r||""===r||void 0===r?F(e.responseText):void 0}(n,e.lastSize);if(i&&(e.metrics.rxSize=i),e.sameOrigin){var o=n.getResponseHeader("X-NewRelic-App-Data");o&&((0,T.p)(I.mY,["Ajax/CrossApplicationTracing/Header/Seen"],void 0,r.D.metrics,t),e.params.cat=o.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",a),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",u),t.on("xhr-cb-time",d),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",A),t.on("fn-start",v),t.on("fetch-done",w)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function Y(e,t){var r=(0,U.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var J=i(3614);const{BST_RESOURCE:Q,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:oe,PUSH_STATE:ae}=J;var se=i(7056),ce=i(7144);class ue extends f{static featureName=ce.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,ce.t9,r);try{const e=JSON.parse(localStorage.getItem("NRBA_SESSION"));e.sessionReplayMode!==se.IK.OFF?this.#a(e.sessionReplayMode):this.importAggregator({})}catch(e){this.importAggregator({})}}async#a(e){const{Recorder:t}=await Promise.all([i.e(111),i.e(433)]).then(i.bind(i,4136));this.recorder=new t({mode:e,agentIdentifier:this.agentIdentifier}),this.recorder.startRecording(),this.importAggregator({recorder:this.recorder})}}var de=i(7836);const{FEATURE_NAME:le,START:fe,END:he,BODY:pe,CB_END:ge,JS_TIME:me,FETCH:ve,FN_START:be,CB_START:ye,FN_END:Ae}=de;var we=i(4649);class xe extends f{static featureName=we.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,we.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new v({agentIdentifier:this.agentIdentifier}),this.features={},(0,x.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=a(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,_.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}}({features:[K,p,O,class extends f{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;const n=this.ee;let i;(0,B.QU)(n),this.eventsEE=(0,B.em)(n),this.eventsEE.on(oe,(function(e,t){this.bstStart=(0,D.z)()})),this.eventsEE.on(ie,(function(e,t){(0,T.p)("bst",[e[0],t,this.bstStart,(0,D.z)()],void 0,r.D.sessionTrace,n)})),n.on(ae+te,(function(e){this.time=(0,D.z)(),this.startPath=location.pathname+location.hash})),n.on(ae+re,(function(e){(0,T.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,T.p)(Q,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},ue,j,xe,k,class extends f{static featureName=le;constructor(e,t){if(super(e,t,le,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;if(!(0,n.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,i=0;const o=this.ee.get("tracer"),a=(0,B._L)(this.ee),s=(0,B.Lg)(this.ee),c=(0,B.BV)(this.ee),u=(0,B.Kf)(this.ee),d=this.ee.get("events"),f=(0,B.u5)(this.ee),h=(0,B.QU)(this.ee),p=(0,B.Gm)(this.ee);function g(e,t){h.emit("newURL",[""+window.location,t])}function m(){i++,r=window.location.hash,this[be]=(0,D.z)()}function v(){i--,window.location.hash!==r&&g(0,!0);var e=(0,D.z)();this[me]=~~this[me]+e-this[be],this[Ae]=e}function b(e,t){e.on(t,(function(){this[t]=(0,D.z)()}))}this.ee.on(be,m),s.on(ye,m),a.on(ye,m),this.ee.on(Ae,v),s.on(ge,v),a.on(ge,v),this.ee.buffer([be,Ae,"xhr-resolved"],this.featureName),d.buffer([be],this.featureName),c.buffer(["setTimeout"+he,"clearTimeout"+fe,be],this.featureName),u.buffer([be,"new-xhr","send-xhr"+fe],this.featureName),f.buffer([ve+fe,ve+"-done",ve+pe+fe,ve+pe+he],this.featureName),h.buffer(["newURL"],this.featureName),p.buffer([be],this.featureName),s.buffer(["propagate",ye,ge,"executor-err","resolve"+fe],this.featureName),o.buffer([be,"no-"+be],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(f,ve+fe),b(f,ve+"-done"),b(a,"new-jsonp"),b(a,"jsonp-end"),b(a,"cb-start"),h.on("pushState-end",g),h.on("replaceState-end",g),window.addEventListener("hashchange",g,(0,R.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",g,(0,R.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){g(0,i>1)}),(0,R.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script><meta content="width=device-width, initial-scale=1.0" name="viewport" /><meta content="noindex, nofollow" name="robots" /><script src="//js.honeybadger.io/v6.6/honeybadger.min.js" type="text/javascript"></script><script>Honeybadger.setContext({
+  user_id: "96406",
+  user_email: "ccabreragarc2023@fau.edu",
+});</script><script>Honeybadger.configure({
+  apiKey: "d6442453",
+  environment: "production",
+  revision: "5955841a34446e0b22d9b6029aca1be246c8e798",
+  enableUncaught: true,
+  debug: false,
+});
+// Ignore errors from Userway
+Honeybadger.beforeNotify((notice) => {
+  if (/userway/.test(notice.stack)) { return false; }
+});</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap" rel="stylesheet">
+<style> @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap'); </style>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C6WBPLRZK9"></script><script>// Google analytics setup
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('set', {"dimension1":"96406","dimension2":"219659","dimension3":"Cesar Cabrera Garcia","dimension4":"For-Credit-Intermediate-Web-Development-Spring-2024","dimension5":"Participant","dimension6":"4","dimension7":"true","dimension8":"true","dimension9":"40","dimension10":"571","dimension11":"6251"});
+gtag('config', 'G-C6WBPLRZK9', {"global_member_id":96406,"cohort_member_id":219659,"member_name":"Cesar Cabrera Garcia","cohort_name":"For-Credit-Intermediate-Web-Development-Spring-2024","current_role":"Participant","current_unit":4,"is_active_participant":true,"cohort_in_progress":true,"current_course":40,"current_cohort":571,"current_location":6251,"user_id":"96406"});
+
+// Send screen_view for initial page load.
+gtag('event', 'screen_view');
+
+// Alert browser issues!
+// https://browser-update.org/#test-bu
+var $buoop = {vs:{i:10,f:-4,o:-4,s:8,c:-4},api:4};
+function $buo_f(){
+ var e = document.createElement("script");
+ e.src = "//browser-update.org/update.min.js";
+ document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}
+// Hotjar
+
+// <!-- Hotjar Tracking Code for codepath.org -->
+(function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:2300813,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
+// Userway - website accessibility widget
+(function(d){
+  var s = d.createElement("script");
+  /* uncomment the following line to override default position*/
+  s.setAttribute("data-position", 5);
+  /* uncomment the following line to override default size (values: small, large)*/
+  /* s.setAttribute("data-size", "small");*/
+  /* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
+  /* s.setAttribute("data-language", "language");*/
+  /* uncomment the following line to override color set via widget (e.g., #053f67)*/
+  s.setAttribute("data-color", "#4F5DFF");
+  /* uncomment the following line to override type set via widget (1=person, 2=chair, 3=eye, 4=text)*/
+  /* s.setAttribute("data-type", "1");*/
+  /* s.setAttribute("data-statement_text", "Our Accessibility Statement");*/
+  /* s.setAttribute("data-statement_url", "http://www.example.com/accessibility");*/
+  /* uncomment the following line to override support on mobile devices*/
+  /* s.setAttribute("data-mobile", true);*/
+  /* uncomment the following line to set custom trigger action for accessibility menu*/
+  /* s.setAttribute("data-trigger", "triggerId")*/
+  s.setAttribute("data-account", "5L8xHh2cOG");
+  s.setAttribute("src", "https://cdn.userway.org/widget.js");
+  (d.body || d.head).appendChild(s);
+})(document)</script></head><body><div class="navbar navbar-default navbar-fixed-top hidden-print" id="main-nav"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">CodePath Courses</a></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Courses <b class="caret"></b></a><ul class="dropdown-menu scrollable-menu"><li class="active"><a href="/courses/web102">WEB102 | Intermediate Web Development</a></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;<span class="hidden-sm">Quick&nbsp;</span><span class="visible-xs-inline visible-lg-inline">Links&nbsp;</span><b class="caret"></b></a><ul class="dropdown-menu"><li><li><a href="/snippets/web102/syllabus" target="_blank">Syllabus</a></li></li><li><li><a href="/snippets/web102/prework" target="_blank">Prework</a></li></li><li><li><a href="/courses/web102/pages/grading" target="_blank">Grading Rubrics</a></li></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span>&nbsp;<span class="hidden-sm">Quick Actions</span>&nbsp;<b class="caret"></b></a><ul class="dropdown-menu"><li><a href="https://apply.codepath.com/organizations/codepathorg/cohorts/571/group-formation/ideas/" target="_blank"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;Add a Project Idea</a></li><li><a href="https://apply.codepath.com/members/edit-profile/" target="_blank"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>&nbsp;&nbsp;Update Profile Information</a></li><li><a href="https://apply.codepath.com/organizations/codepathorg/cohorts/571/participant/withdraw/" target="_blank"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>&nbsp;&nbsp;Withdraw from Course</a></li></ul></li></ul><ul class="nav navbar-nav navbar-right"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" style="overflow:hidden"><div class="pull-left"><img src="https://avatars.githubusercontent.com/u/156105005?v=4" width="20" class="img-circle img-responsive" alt="156105005?v=4" /></div>&nbsp;<div class="pull-right visible-lg">Cesar Cabrera Garcia <b class="caret"></b></div></a><ul class="dropdown-menu"><li><a href="https://apply.codepath.com/members/edit-profile/" target="_blank">Update Profile</a></li><li><a href="/" data-method="delete">Logout</a></li></ul></li></ul></div></div></div><div class="container"><div class="title clearfix"><div class="pull-left"><div class="square-logo"></div></div><div class="course-label"><h1>WEB102 | Intermediate Web Development</h1><h2>For-Credit-Intermediate-Web-Development-Spring-2024 (@ Florida Atlantic University)</h2><h2>Personal Member ID#: <strong>96406</strong></h2></div><p class="alert alert-info hidden-print">Need help?&nbsp;Post on our <a href="http://codepath.slack.com/" target="blank" class="alert-link">Class Slack Channel</a>&nbsp;or email us at <a href="mailto:support@codepath.org" class="alert-link">support@codepath.org</a></p></div><div class="row"><div class="col-md-2 sidebar hidden-print"><ul class="nav nav-pills nav-stacked"><li class=""><a href="/courses/web102/pages/overview">Overview</a></li><li class=""><a href="/snippets/web102/prework" target="_blank">Prework</a></li><li class=""><a href="/courses/web102/pages/getting_started">Getting Started</a></li><li class=""><a href="/courses/web102/pages/schedule">Schedule</a></li><li class=""><a href="/courses/web102/pages/submitting_coursework">Submitting Coursework</a></li><li class=""><a href="/courses/web102/pages/grading">Grading Rubrics</a></li><li class=""><a href="/courses/web102/pages/ai_usage">AI Usage</a></li><li><a href="/courses/web102/report"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>&nbsp;<span>My Report</span></a></li><li class="active"><a href="/courses/web102/unit/1#!overview"><span>Unit 1 &nbsp;<span class="glyphicon glyphicon-ok" /></span></a></li><li><a href="/courses/web102/unit/2#!overview"><span>Unit 2 &nbsp;<span class="glyphicon glyphicon-ok" /></span></a></li><li><a href="/courses/web102/unit/3#!overview"><span>Unit 3 &nbsp;<span class="glyphicon glyphicon-ok" /></span></a></li><li><a href="/courses/web102/unit/4#!overview"><span>Unit 4 &nbsp;<span class="glyphicon glyphicon-map-marker" /></span></a></li><li><a href="/courses/web102/unit/5#!overview"><span>Unit 5 &nbsp;</span></a></li><li><a href="/courses/web102/unit/6#!overview"><span>Unit 6 &nbsp;</span></a></li><li><a href="/courses/web102/unit/7#!overview"><span>Unit 7 &nbsp;</span></a></li><li><a href="/courses/web102/unit/8#!overview"><span>Unit 8 &nbsp;</span></a></li><li><a href="/courses/web102/unit/9#!overview"><span>Unit 9 &nbsp;</span></a></li><li><a href="/courses/web102/unit/10#!overview"><span>Unit 10 &nbsp;</span></a></li><li class=""><a href="/courses/web102/pages/groupings">Groupings</a></li><li><details><summary>Career Resources</summary><ul class="nav nav-pills nav-stacked"><li class=""><a href="/courses/web102/pages/career/career_center_overview">Career Center</a></li>
+<li class=""><a href="/courses/web102/pages/career/semester_events">Events</a></li></ul></details></li>
+<li class=""><a href="/courses/web102/pages/grading_prework">Prework Grading Guide</a></li>&nbsp;</ul></div><div class="col-md-10"><ul class="nav nav-tabs hidden-print"><li><a href="#overview" data-toggle="tab"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Overview</a></li><li><a href="#labs" data-toggle="tab">Lab</a></li><li><a href="#projects" data-toggle="tab">Projects</a></li><li><a href="#resources" data-toggle="tab"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>&nbsp;Resources</a></li><li><a href="#career" data-toggle="tab"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span>&nbsp;Career</a></li><li><a href="#report" data-toggle="tab"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>&nbsp;Report</a></li></ul><div class="tab-content section-content" style="height: 1000px;"><div class="tab-pane" id="overview"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"><span class="feedback section-action"><a href="#modal" class="feedback-link" title="Submit Feedback" data-toggle="tooltip" data-placement="right" data-container="body"><span title="" class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></span></div><div class="alert alert-warning inset-text">
+📬 Submit your <a href="#!projects">Project 1</a> by <strong><span data-time="2024-01-28T23:59:00-05:00" data-format="longdatetime">Sunday, January 28th at 11:59pm EST</span></strong> using the <strong>Submit</strong> button on the <strong><a href="#!projects">Project tab</a></strong>
+</div>
+<h2><a class="anchor" id="heading-unit-1-diving-into-react" href="#heading-unit-1-diving-into-react"><span class="glyphicon glyphicon-link"></span></a>Unit 1 - Diving Into React</h2>
+<p>Welcome to Unit 1! We are so glad to have you.</p>
+<p>This unit is all about <a href="https://beta.reactjs.org/" target="_blank">React</a>, a frontend web framework created by Facebook that allows for the creation of decompose-able, reusable user interfaces. What do we mean by all these terms?</p>
+<ul>
+<li>Frontend web framework: When we say frontend, we mean creating what the user interacts with. We think you'll find that React makes your life easier. Your CSS will look roughly the same as before, but now you'll be combining HTML and JavaScript together into JSX. Now, in addition to stuff like <code>&lt;p&gt;</code> and <code>&lt;div&gt;</code>, you'll start creating your own elements (called components) like <code>&lt;BanListPane&gt;</code>, <code>&lt;Card&gt;</code>, and <code>&lt;Post&gt;</code>.</li>
+<li>Decompose-able: React is all about components. Take a look at a site like <code>google.com</code> and you'll see the same section of the UI (user interface) repeated over and over: a search result. When using React, we'll break websites down into parts and tackle them one at a time.</li>
+<li>Reusable: Just like Legos, you can use components in a lot of different ways. Build a castle, a car, or a life-size zebra, all using the same building blocks. Once you begin working with React, you'll start seeing websites in components, kinda like the <a href="https://en.wikipedia.org/wiki/Tetris_effect" target="_blank">tetris effect</a>.</li>
+</ul>
+<p>Not only is React convenient and easy to use, it's also the most popular frontend framework. According to <a href="https://2021.stateofjs.com/en-US/libraries/front-end-frameworks" target="_blank">the State of JS survey 2021</a>, React has held the #1 spot for six straight years since 2016, the first year the survey was taken:</p>
+<img src="https://i.imgur.com/9ZaSftm.png" title="state of JS usage survey answers " width=" 600" alt="state of JS usage survey answers " class="center-block" />
+<p>Excited to see how using React can up your frontend game? Same!</p>
+<p>In this unit's <a href="#!labs">lab</a>, you'll create a grid-style calendar with one-hour events that plans out a single week. Your calendar can be about a vacation, a historical event, a psychology phenomenon, a true crime, or any other timetable you can think of! You'll get your first taste of how reusable React components can be and use <code>props</code> to give different types of events different looks and feels.</p>
+<p>This unit's <a href="#!projects">individual project</a> has you building a community board for users to share resources or events happening in their local area. Is it a place to post your favorite food truck? A safe space for sharing LGBTQ-friendly businesses? A repository for cool events happening this year? You decide!</p>
+<hr />
+<h3><a class="anchor" id="heading-weekly-checklist" href="#heading-weekly-checklist"><span class="glyphicon glyphicon-link"></span></a>Weekly Checklist</h3>
+<h4><a class="anchor" id="heading-in-class" href="#heading-in-class"><span class="glyphicon glyphicon-link"></span></a>In Class:</h4>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Attend the 📕 <strong>In-Class Session</strong> <a href="https://docs.google.com/presentation/d/1EqFiPXfKdDNarS2GjgSV7jRf5rLkbRkl9ZeC8zrCbfY/edit?usp=drivesdk" target="_blank"><em>(🔗 Unit 1 slides)</em></a>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Complete the 🎯 <a href="#!labs"><strong>Lab Session</strong></a>
+</div>
+</li>
+</ul>
+<h4><a class="anchor" id="heading-after-class" href="#heading-after-class"><span class="glyphicon glyphicon-link"></span></a>After Class:</h4>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Complete and <strong>📬 submit</strong> this unit's 🧩 <a href="#!projects"><strong>Project</strong></a>
+<ul>
+<li>Reminder: Due by <strong><span data-time="2024-01-28T23:59:00-05:00" data-format="longdatetime">Sunday, January 28th at 11:59pm EST</span></strong>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assignment Submission Summary</h2><p>The following is the summary of your scored submissions for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">13 / 12</span><strong>Score</strong></li><li class="list-group-item"><span class="label label-primary label-badge">108%</span><strong>Percent Score</strong></li><li class="list-group-item"><span class="label label-badge label-success">Jan 28 at 8:13pm EST</span><strong>First Submitted At</strong></li></ul><h4>Course Submission Scores Breakdown</h4><p>The following aggregates the scores of all students enrolled in your class group:</p><table class="table table-striped"><thead><tr><th>Min</th><th>Mean</th><th>Max</th></tr></thead><tbody><tr><td>9</td><td>13</td><td>14</td></tr></tbody></table></div><div class="col-md-2"><a href="https://github.com/ccabreragarc/Project-1-Community-Board" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;Project Repo</a><img src="https://submissions.us-east-1.linodeobjects.com/web102/nu5sYAal.gif" width="250" alt="Nu5syaal" /></div></div></div></div></div><div class="tab-pane" id="labs"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"><span class="feedback section-action"><a href="#modal" class="feedback-link" title="Submit Feedback" data-toggle="tooltip" data-placement="right" data-container="body"><span title="" class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></span></div><h2><a class="anchor" id="heading-lab-1-timetabled" href="#heading-lab-1-timetabled"><span class="glyphicon glyphicon-link"></span></a>Lab 1: Timetabled</h2>
+<h3><a class="anchor" id="heading-overview" href="#heading-overview"><span class="glyphicon glyphicon-link"></span></a>Overview</h3>
+<p>In this project, you will build a grid-style calendar with one-hour events that plan out a single week. You must create the calendar for someone else. This can be a friend, family member, historical figure, role model, or imaginary person. Timetables can be informative, humorous, or exploratory. For example:</p>
+<ul>
+<li>General: Plan a vacation for a friend, family member, or pet</li>
+<li>History: A week in the life of a historical figure, timeline of a coup</li>
+<li>Psychology: How to adapt to a polyphasic sleep cycle</li>
+<li>True crime: The week before a famous crime</li>
+</ul>
+<p><em>View an exemplar of what you'll be creating in this lab <a href="https://bucolic-cobbler-d5aca6.netlify.app/" target="_blank">here</a>!</em></p>
+<h4><a class="anchor" id="heading-required-features" href="#heading-required-features"><span class="glyphicon glyphicon-link"></span></a>Required Features</h4>
+<ul>
+<li>A one-week calendar that includes one-hour time blocks</li>
+<li>Events have different titles</li>
+<li>Events have different colors based on their type</li>
+</ul>
+<p><a href="/course_images/web102/lab1/required.png" target="_blank"><img src="/course_images/web102/lab1/required.png" title="Screenshot of required features on page" width="600" alt="Screenshot of required features on page" class="center-block" /></a></p>
+<h4><a class="anchor" id="heading-stretch-features" href="#heading-stretch-features"><span class="glyphicon glyphicon-link"></span></a>Stretch Features</h4>
+<ul>
+<li>Event blocks have additional information, such as a description and location</li>
+</ul>
+<p><a href="/course_images/web102/lab1/stretch.png" target="_blank"><img src="/course_images/web102/lab1/stretch.png" title="Screenshot of required features on page" width="600" alt="Screenshot of required features on page" class="center-block" /></a></p>
+<h3><a class="anchor" id="heading-resources" href="#heading-resources"><span class="glyphicon glyphicon-link"></span></a>Resources</h3>
+<ul>
+<li><a href="https://vitejs.dev/guide" target="_blank">Getting Started with Vite</a></li>
+<li><a href="https://reactjs.org/docs/introducing-jsx.html" target="_blank">ReactJS: Introducing JSX</a></li>
+<li><a href="https://reactjs.org/docs/rendering-elements.html" target="_blank">ReactJS: Rendering Elements</a></li>
+<li><a href="https://reactjs.org/docs/components-and-props.html" target="_blank">ReactJS: Components and Props</a></li>
+</ul>
+<h3><a class="anchor" id="heading-lab-instructions" href="#heading-lab-instructions"><span class="glyphicon glyphicon-link"></span></a>Lab Instructions</h3>
+<hr />
+<h3><a class="anchor" id="heading-getting-started" href="#heading-getting-started"><span class="glyphicon glyphicon-link"></span></a>Getting Started</h3>
+<p><a href="https://github.com/features/copilot" target="_blank"><strong>GitHub Copilot</strong></a> is an AI-powered code completion tool developed by GitHub in collaboration with OpenAI. Leveraging the GPT-3 model, Copilot suggests whole lines or blocks of code as developers type, helping them write code faster and with fewer errors. It's trained on a vast amount of public code repositories, enabling it to provide suggestions in various languages and frameworks.</p>
+<p><a href="https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat" target="_blank"><strong>GitHub Copilot Chat</strong></a> is a chat interface that allows developers to ask and receive answers to coding-related questions within a supported IDE. The chat interface is contextually aware of the code a developer has typed and any error messages.</p>
+<div class="alert alert-info inset-text">
+<strong>Note:</strong> Alternatively, you can use ChatGPT as an AI assistant instead of Copilot. This will require you to copy and paste code to and from your IDE and ChatGPT instead of using the Copilot extension in VS Code. A ChatGPT account is free of charge and gives you access to ChatGPT 3.5.
+</div>
+<h4><a class="anchor" id="heading-getting-github-verified-student-access" href="#heading-getting-github-verified-student-access"><span class="glyphicon glyphicon-link"></span></a>Getting GitHub Verified Student Access</h4>
+<p>Verified student access is required to obtain <strong>free access</strong> to GitHub Copilot, otherwise it is only available as a paid service ($10 per month after 30 day free trial). You will need to complete this step before requesting access for GitHub Copilot Chat.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Go to GitHub's Student Developer Pack page at <a href="https://education.github.com/pack" target="_blank"><strong>education.github.com/pack</strong></a>.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Click on the green <strong>Sign up for Student Developer pack</strong> button.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Under <strong>Individuals</strong>, click on <strong>Get student benefits</strong>.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Under <strong>Select the academic status</strong>, select <strong>Student</strong>.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Select or add the email address you use for school, enter your school's name, and describe how you plan to use GitHub.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Click <strong>Continue</strong>, and you will then be prompted to upload proof of your academic status.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Click <strong>Take a picture</strong> to use your computer's camera to upload proof.
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Place your school ID or other proof of current academic status in the frame, then click <strong>Take photo</strong>.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Under <strong>Proof Type</strong>, select the type of proof you are providing.</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Verify your application details, then click <strong>Process my application</strong>.</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text">
+<strong>Note:</strong> If you see a banner asking you to fix something in your application after clicking the <strong>Process my application</strong> button, fix it and then click <strong>Reprocess my application</strong>.
+<p>You'll receive a confirmation email letting you know if your application is approved. Sometimes this happens within a few minutes, but it can sometimes take a few days.
+</p></div>
+<p>Verified student access also gives you access to the <strong>GitHub Student Developer Pack</strong>, which is a toolkit offered by GitHub to support your learning and development in the coding world. It grants you <strong>free access</strong> to the best developer tools in one place so you can learn by doing and be ready for the professional world.</p>
+<h4><a class="anchor" id="heading-requesting-access-for-github-copilot-chat" href="#heading-requesting-access-for-github-copilot-chat"><span class="glyphicon glyphicon-link"></span></a>Requesting Access for GitHub Copilot Chat</h4>
+<p><strong>Do this step</strong> <em><strong>after</strong></em> <strong>you have received confirmation that you have verified student access on GitHub.</strong></p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Navigate to <a href="https://github.com/github-copilot/chat_jetbrains_waitlist_signup/join" target="_blank"><strong>Github Copilot Chat Signup</strong></a>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ If you are not already logged into ChatGPT, click the green <strong>Sign in to join the waitlist</strong> button.</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text">
+<strong>Note:</strong> If you see a message about needing to have a GitHub Copilot license, you do not yet have verified student access on GitHub. Try again after you have received confirmation that you have verified student access.
+</div>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Select Visual Studio Code, then click the green <strong>Join the waitlist</strong> button.</div>
+</li>
+</ul>
+<p>You should receive access to GitHub Copilot Chat within a few days, although it can take up to a week. It is important to complete this step as soon as possible to ensure you have access before the first class.</p>
+<h4><a class="anchor" id="heading-adding-github-copilot-to-vs-code" href="#heading-adding-github-copilot-to-vs-code"><span class="glyphicon glyphicon-link"></span></a>Adding GitHub Copilot to VS Code</h4>
+<p>You will need to use the Insiders edition of VS Code to access GitHub Copilot Chat.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Download and install <a href="https://code.visualstudio.com/insiders/" target="_blank"><strong>VS Code Insiders</strong></a>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ In VS Code Insiders, click the <strong>Extensions</strong> icon.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ In the search bar, type <strong>copilot</strong>.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Install the <strong>GitHub Copilot</strong> and <strong>GitHub Copilot Chat</strong> extensions.</div>
+</li>
+</ul>
+<p>We'll be using the Copilot Chat to leverage it as a programming assistant instead of using the inline code-generating feature. We recommend disabling the inline Copilot as it can be distracting and sometimes not directly related to the task we're trying to do.</p>
+<p>To disable the inline Copilot, click the Copilot icon in the bottom right corner of the status bar. If prompted, choose <strong>Globally</strong>.</p>
+<img src="https://user-images.githubusercontent.com/7171/152237975-ea0238e7-1d24-4f35-a5a2-d9b8d194d18e.png" title="disabling inline Copilot" width="" alt="disabling inline Copilot" class="center-block" />
+<h3><a class="anchor" id="1-heading-required-features" href="#1-heading-required-features"><span class="glyphicon glyphicon-link"></span></a>Required Features</h3>
+<h4><a class="anchor" id="heading-step-0-create-a-new-react-project-using-vite" href="#heading-step-0-create-a-new-react-project-using-vite"><span class="glyphicon glyphicon-link"></span></a>Step 0: Create a New React Project Using Vite</h4>
+<p>In this step, we will create a new React project using Vite.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Download and install <a href="https://nodejs.org/en/download/" target="_blank">Node.js</a>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Open the Terminal in VS Code using the menu (<code>View -&gt; Terminal</code>) or the shortcut (<code>ctrl + `</code>)
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Navigate to the folder on your computer where you keep GitHub files (it may be named <code>github</code>, or you may wish to create a new folder using the <code>cd</code> (change directory) command.</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<p>If you want more info about how moving within the Terminal works, <a href="https://terminalcheatsheet.com/guides/navigate-terminal" target="_blank">check out this tutorial</a>.</p>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI to Explore New Concepts</strong></summary><div class="well inset-text">
+<p>You can also ask Copilot (or ChatGPT) for a list of commands that can be used in the VS Code Terminal. Open the Copilot Chat and ask:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>What commands can I use in the Terminal in VS Code?</p>
+</blockquote>
+<p>It'll likely give you a list of command used commands. You can also ask additional follow up questions if you want to learn more about any of these commands or ask for examples.</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>Can you show me an example of how I would change directories and then create a new directory?</p>
+</blockquote>
+<p>Copilot will show you how to use the commands and let you know what you need to change in its example for your scenario. Right above the input box, it will also suggest other follow-up questions you might want to ask based on things you've asked already. Feel free to experiment with these suggested questions as well!</p>
+<p>The results from ChatGPT will be slightly different, so if you don't have access to the Copilot Chat, ask the same questions in ChatGPT.</p>
+<p></p></div></details></div>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Make sure you have added the folder to your VS Code workspace. If you don't see the folder in the Explorer, right-click in the pane, select <code>Add Folder to Workspace...</code>, and then add your folder.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ In your Github repository, initialize a new React project using Vite:
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ In the Terminal, enter the command <code>npm create vite@latest</code>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Name the project <code>timetabled</code>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Select <strong>React</strong> as the framework (use the arrow keys and <code>enter</code> to navigate the menu)</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Select <strong>JavaScript</strong> for the language variant</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<p>Now, let's install the required dependencies and run the app!</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Move into the <code>timetabled</code> directory: <code>cd timetabled</code>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Install the dependencies by running the command <code>npm install</code>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Run the application in developer mode by running the command <code>npm run dev</code>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Open project in the browser. Vite will display a link, such as <code>http://127.0.0.1:5173</code> to click on or copy/paste that will take you to the localhost port where the project is running.</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text">
+<strong>💡 Tip:</strong> If you'd like to stop the server, you can use <code>ctrl + c</code> or <code>cmd + c</code> within the Terminal, or use the trash can icon in the top right of the Terminal within VS Code. To run the server again, simply use <code>npm run dev</code> again.
+</div>
+<p>📍 <strong>Checkpoint 0</strong>: At this point in the lab, your app should look like this:</p>
+<h2><a href="/course_images/web102/lab1/checkpoint_0.png" target="_blank"><img src="/course_images/web102/lab1/checkpoint_0.png" title="Screenshot of required features on page" width="600" alt="Screenshot of required features on page" class="center-block" /></a></h2>
+<h4><a class="anchor" id="heading-step-1-update-the-starter-code-for-root-file-appjsx" href="#heading-step-1-update-the-starter-code-for-root-file-appjsx"><span class="glyphicon glyphicon-link"></span></a>Step 1: Update the Starter Code for Root File <code>App.jsx</code>
+</h4>
+<p>In this step, we will modify the root file of our React application. In <code>main.jsx</code>, you will see a method named <code>createRoot()</code>. This method lets you create a root section to display React components inside a browser DOM node. Based on the provided starter code, the root of our React applications is the <code>App</code> component.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Go to the root file <code>App.jsx</code> in the <code>src</code> directory.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Replace the provided starter code in <code>App.jsx</code> with the following code:</div>
+</li>
+</ul>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="k">import</span> <span class="dl">'</span><span class="s1">./App.css</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">App</span><span class="dl">"</span><span class="o">&gt;</span>
+
+      
+    <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">App</span>
+</code></pre></div></div>
+<p>At this point, saving your code will update the project and you should see the page in your browser refresh and display a blank screen.</p>
+<p>The above code snippet uses JavaScript ES6. JavaScript ES6 brings new syntax and features to make your code more modern and more readable.</p>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI to Explore New Concepts</strong></summary><div class="well inset-text">
+<p>Highlight your code, then right-click and choose <strong>Copilot &gt; Explain This</strong> to get a line-by-line explanation of what this code does.</p>
+<p>If you're using ChatGPT, copy and paste your code into it and ask it to explain the code:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>(<em>your code here</em>)</p>
+<p>What does this code do?</p>
+</blockquote>
+<p>Copilot may also suggest improving the code by adding content inside the <code>&lt;div&gt;</code> element or to provide more context about the purpose of the component and how it fits into the overall application structure.</p>
+<p>Additionally, if you want to learn more about JavaScript ES6, try asking questions like:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>What is JavaScript ES6?</p>
+</blockquote>
+<p>It may suggest additional follow up questions you might want to ask, like:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>What are some examples of JavaScript ES6 features?</p>
+</blockquote>
+<p></p></div></details></div>
+<p>The first line of code <code>import './App.css'</code> imports the CSS file with code that styles of <code>App</code> or the root of the application. Style rules included in <code>App.css</code> are applied to all elements and components rendered in the React application.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Open the <code>App.css</code> file in the <code>src</code> directory.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Replace the provided starter code in <code>App.css</code> in the with the following code:</div>
+</li>
+</ul>
+<div class="highlighter-rouge language-css"><div class="highlight"><pre class="codehilite"><code><span class="nf">#root</span> <span class="p">{</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">1280px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Inter</span><span class="p">,</span> <span class="n">Avenir</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+ <span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="py">place-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">min-width</span><span class="p">:</span> <span class="m">320px</span><span class="p">;</span>
+  <span class="nl">min-height</span><span class="p">:</span> <span class="m">100vh</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Remove all of the CSS style rules in <code>index.css</code>. We will add new CSS rules to that file later in this tutorial.</div>
+</li>
+</ul>
+<p>Now you have removed all of the elements and style rules from the starter template, your React application should be a blank page. (If you don't see a blank page, make sure you've saved your changes.) Let's add your first elements to your React application:</p>
+<p>In the <code>div</code> in <code>App.jsx</code></p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Create an <code>h1</code> element with the title of your project.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Create an <code>h2</code> element with a subtitle containing a message for your schedule recipient.</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>Ask Copilot to generate this code for you if you'd like. When you want to ask AI tools like Copilot or ChatGPT to write code, make sure to be as specific as possible about the steps you expect it to take. For example:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>I need to update my code to show a title and subtitle on my page. Write code to go inside the div to do the following:</p>
+<ol>
+<li>Create an h1 element with the text "Itinerary for Chicago"</li>
+<li>Create an h2 element with the text "Welcome to Chicago!"</li>
+</ol>
+</blockquote>
+<p>Change the text you want it to use to whatever title and subtitle you want to use.</p>
+<p>If you're using ChatGPT instead of Copilot, copy and paste your <code>App.jsx</code> code into ChatGPT, then ask it the same question.</p>
+<p></p></div></details></div>
+<p>📍 <strong>Checkpoint 1</strong>: At this point in the lab, your app should look like this:</p>
+<p><a href="/course_images/web102/lab1/checkpoint_1.png" target="_blank"><img src="/course_images/web102/lab1/checkpoint_1.png" title="Screenshot of required features on page" width="600" alt="Screenshot of required features on page" class="center-block" /></a></p>
+<hr />
+<h4><a class="anchor" id="heading-step-2-create-the-calendar-component" href="#heading-step-2-create-the-calendar-component"><span class="glyphicon glyphicon-link"></span></a>Step 2: Create the <code>Calendar</code> Component</h4>
+<p>In this step, you will create a <code>Calendar</code> component with tester code. You'll then import and add it to your web application.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ In the <code>src</code> directory, create a subdirectory called <code>components</code>.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ In the <code>components</code> directory, create a file called <code>Calendar.jsx</code>.</div>
+</li>
+</ul>
+<p>In <code>Calendar.jsx</code>:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Import <code>React</code> from the <code>react</code> library.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>To create a React functional component, define a function called <code>Calendar</code> using arrow function notation.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="kd">const</span> <span class="nx">Calendar</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  
+<span class="p">}</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Between the curly braces, write a return statement followed by a pair of parentheses.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="k">return</span> <span class="p">(</span>
+
+<span class="p">)</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>Between the parentheses, we'll write JSX statements to construct the component.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Create a <code>div</code> where <code>className="Calendar"</code></p>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Inside the <code>div</code>, write the text <code>"Testing the calendar component"</code>.</p>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>At the end of the file, export the component by writing:</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="k">export</span> <span class="k">default</span> <span class="nx">Calendar</span><span class="p">;</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>This exports the component so we can import it into our <code>App</code>.</p>
+<p>In <code>App.jsx</code>:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Import the <code>Calendar</code> component.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="k">import</span> <span class="nx">Calendar</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./components/Calendar</span><span class="dl">'</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>After the <code>h2</code> element, add a <code>Calendar</code> component.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="o">&lt;</span><span class="nx">Calendar</span> <span class="o">/&gt;</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>📍 <strong>Checkpoint 2</strong>:  In the browser, you should now see the test message <code>Testing the calendar</code> on your React application.</p>
+<p><a href="/course_images/web102/lab1/checkpoint_2.png" target="_blank"><img src="/course_images/web102/lab1/checkpoint_2.png" title="Screenshot of implemented features from step 2" width="600" alt="Screenshot of implemented features from step 2" class="center-block" /></a></p>
+<hr />
+<h4><a class="anchor" id="heading-step-3-create-a-grid-in-the-calendar-component" href="#heading-step-3-create-a-grid-in-the-calendar-component"><span class="glyphicon glyphicon-link"></span></a>Step 3: Create a Grid in the <code>Calendar</code> Component</h4>
+<p>The <code>Calendar</code> component is a grid that will be used to construct your seven day timetable. The grid will store 1 hour blocks from Sunday through Saturday, 8am to 5pm. In this step, you will update a <code>Calendar</code> component with a grid.</p>
+<p>In <code>Calendar.jsx</code>:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Remove the test message <code>Testing the calendar</code>, but leave the <code>div</code>.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Between the parentheses <code>()</code>, create a table with a table header.</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>Ask Copilot to generate this code for you if you'd like. Don't forget, when you want to ask AI tools like Copilot or ChatGPT to write code, make sure to be as specific as possible about the steps you expect it to take. In this case, we want to tell Copilot to add a table with a table header inside the return statement of our <code>Calendar</code> component:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>In my Calendar component, I need to create an HTML table that has a table header. Write the code to go inside the return statement to create the table.</p>
+</blockquote>
+<p>It may give you code that contains additional elements that you don't need right now. Review the code it suggests to make sure that it achieves the goals, and remove any extra code we don't need.</p>
+<p>If you're using ChatGPT, copy and paste your <code>Calendar</code> component code into ChatGPT, then ask it the same question.</p>
+<p></p></div></details></div>
+<div class="alert alert-warning inset-text"><details><summary><strong>Want to double-check your code? Compare what you have to this ⤵️</strong></summary><div class="well inset-text">
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">thead</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="sr">/thead</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/table</span><span class="err">&gt;
+</span></code></pre></div></div>
+<p></p></div></details></div>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ In the table header, create a table row containing the following 8 table headings: <code>""</code>, <code>"Sunday"</code>, <code>"Monday"</code>, <code>"Tuesday"</code>, <code>"Wednesday"</code>, <code>"Thursday"</code>, <code>"Friday"</code>, <code>"Saturday"</code>.</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>Just like before, we can use Copilot to add to the code we started. If you used Copilot to generate the code for the table and table header, we can now ask it to update the code to add these headings:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>Can you update my table to include a table row that contains the following 8 table headings: "", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"</p>
+</blockquote>
+<p>It may give you code that contains additional elements that you don't need right now. Review the code it suggests to make sure that it achieves the goals, and remove any extra code we don't need.</p>
+<p>If you're using ChatGPT, copy and paste your <code>Calendar</code> component code into ChatGPT, then ask it the same question.</p>
+<p></p></div></details></div>
+<div class="alert alert-warning inset-text"><details><summary><strong>Want to double-check your code? Compare what you have to this ⤵️</strong></summary><div class="well inset-text">
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">thead</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">tr</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">th</span><span class="o">&gt;&lt;</span><span class="sr">/th</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">th</span><span class="o">&gt;</span><span class="nx">Sunday</span><span class="o">&lt;</span><span class="sr">/th</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">th</span><span class="o">&gt;</span><span class="nx">Monday</span><span class="o">&lt;</span><span class="sr">/th</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">th</span><span class="o">&gt;</span><span class="nx">Tuesday</span><span class="o">&lt;</span><span class="sr">/th</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">th</span><span class="o">&gt;</span><span class="nx">Wednesday</span><span class="o">&lt;</span><span class="sr">/th</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">th</span><span class="o">&gt;</span><span class="nx">Thursday</span><span class="o">&lt;</span><span class="sr">/th</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">th</span><span class="o">&gt;</span><span class="nx">Friday</span><span class="o">&lt;</span><span class="sr">/th</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">th</span><span class="o">&gt;</span><span class="nx">Saturday</span><span class="o">&lt;</span><span class="sr">/th</span><span class="err">&gt;
+</span>    <span class="o">&lt;</span><span class="sr">/tr</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="sr">/thead</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/table</span><span class="err">&gt;
+</span></code></pre></div></div>
+<p></p></div></details></div>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>After the table header, create a table body.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span>
+  <span class="p">...</span>
+  <span class="o">&lt;</span><span class="nx">tbody</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="sr">/tbody&gt;   </span><span class="err"> 
+</span><span class="o">&lt;</span><span class="sr">/table</span><span class="err">&gt;
+</span></code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Inside the table body, create 10 table rows, each with 8 table data cells. To do so, copy and paste the following code snippet 10 times.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="o">&lt;</span><span class="nx">tr</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">td</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">time</span><span class="dl">"</span><span class="o">&gt;</span><span class="nx">Insert</span> <span class="nx">Time</span><span class="o">&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/tr</span><span class="err">&gt;
+</span></code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>This code represents a row in the timetable. Each row in the timetable will represent a 1 hour block for the week. The first cell in each row, <code>&lt;td className="time"&gt;</code>, will store the hour (e.g., 8 am). The remaining 7 cells will store any events for each day of the week.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ For each copy, replace the <code>Insert Time</code> with the following hour blocks: <code>8 am</code>,<code>9 am</code>,<code>10 am</code>,<code>11 am</code>,<code>12 pm</code>,<code>1 pm</code>,<code>2 pm</code>,<code>3 pm</code>,<code>4 pm</code>,and <code>5 pm</code>. <strong>Note:</strong> You may choose to use a different time spread or include additional hours (if you're planning a vacation, for example).</div>
+</li>
+</ul>
+<p>In <code>index.css</code>:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Add the following code snippet to create more white space in the table:</p>
+<div class="highlighter-rouge language-css"><div class="highlight"><pre class="codehilite"><code><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="py">place-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">min-width</span><span class="p">:</span> <span class="m">320px</span><span class="p">;</span>
+  <span class="nl">min-height</span><span class="p">:</span> <span class="m">100vh</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">th</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">120px</span><span class="p">;</span>
+  <span class="nl">padding-top</span><span class="p">:</span><span class="m">25px</span><span class="p">;</span>
+  <span class="nl">padding-bottom</span><span class="p">:</span><span class="m">30px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">td</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.time</span> <span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">40px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>📍 <strong>Checkpoint 3</strong>:  At this point in the lab, your app should look like this:</p>
+<p><a href="/course_images/web102/lab1/checkpoint_3.png" target="_blank"><img src="/course_images/web102/lab1/checkpoint_3.png" title="Screenshot of implemented features from step 3" width="600" alt="Screenshot of implemented features from step 3" class="center-block" /></a></p>
+<hr />
+<h4><a class="anchor" id="heading-step-4-create-the-event-component" href="#heading-step-4-create-the-event-component"><span class="glyphicon glyphicon-link"></span></a>Step 4: Create the <code>Event</code> Component</h4>
+<p>In this step, you will create an <code>Event</code> component. The <code>Event</code> component will be a table cell but customized with information related to an event, such as the location.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ In the <code>components</code> directory, create a file called <code>Event.jsx</code>.</div>
+</li>
+</ul>
+<p>In <code>Event.jsx</code>:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Import <code>React</code> from the <code>react</code> library</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Create a React functional component using arrow function notation called <code>Event</code>. It should have a single parameter called <code>props</code>.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="kd">const</span> <span class="nx">Event</span> <span class="o">=</span> <span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  
+<span class="p">}</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Between the curly braces, write a return statement followed by a pair of parentheses.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="k">return</span> <span class="p">(</span>
+
+<span class="p">)</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>Between the parentheses, we'll write JSX statements to construct the component.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Create a <code>td</code> element where <code>className="Event"</code>.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Inside the <code>td</code> element, create an <code>h5</code> element with the text <code>Test Event Name</code>.</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>Ask Copilot to generate this code for you. Like before, be sure to specify the steps you want it to complete, then review the code it suggests to check that it achieves the goals.</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>Write code that does the following:</p>
+<ol>
+<li>Create a td element with the class name "Event"</li>
+<li>Inside the td element, create an h5 element with the text "Test Event Name"</li>
+</ol>
+</blockquote>
+<p>If you're using ChatGPT, copy and paste your <code>Event</code> component code into ChatGPT, then ask it the same question.</p>
+<p></p></div></details></div>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>At the end of the file, export the component by writing:</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="k">export</span> <span class="k">default</span> <span class="nx">Event</span><span class="p">;</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>This exports the component so we can import it into our <code>Calendar</code>.</p>
+<p>In <code>Calendar.jsx</code>:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Import the <code>Event</code> component.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="k">import</span> <span class="nx">Event</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Event</span><span class="dl">'</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Replace one of the <code>td</code> elements in the table with an <code>Event</code> component. For example:</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="o">&lt;</span><span class="nx">tr</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">td</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">time</span><span class="dl">"</span><span class="o">&gt;</span><span class="mi">8</span> <span class="nx">am</span><span class="o">&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">Event</span> <span class="o">/&gt;</span>
+  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/tr</span><span class="err">&gt;
+</span></code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>📍 <strong>Checkpoint 4</strong>:  In the browser, you should now see the test event on the Calendar React application:</p>
+<p><a href="/course_images/web102/lab1/checkpoint_4.png" target="_blank"><img src="/course_images/web102/lab1/checkpoint_4.png" title="Screenshot of implemented features from step 4" width="600" alt="Screenshot of implemented features from step 4" class="center-block" /></a></p>
+<hr />
+<h4><a class="anchor" id="heading-step-5-pass-props-to-the-event-component" href="#heading-step-5-pass-props-to-the-event-component"><span class="glyphicon glyphicon-link"></span></a>Step 5: Pass props to the <code>Event</code> Component</h4>
+<p>In this step, you will pass props to the <code>Event</code> component with the location and the color.</p>
+<p>In the <code>Event</code> component you added to the <code>Calendar</code>:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Create an <code>event</code> prop and set it to <code>'Fancy Dinner 🎩'</code></p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="o">&lt;</span><span class="nx">Event</span> <span class="nx">event</span><span class="o">=</span><span class="dl">'</span><span class="s1">Fancy Dinner 🎩</span><span class="dl">'</span> <span class="o">/&gt;</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Create <code>color</code> prop and set it to <code>'green'</code></p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="o">&lt;</span><span class="nx">Event</span> <span class="nx">event</span><span class="o">=</span><span class="dl">'</span><span class="s1">Fancy Dinner 🎩</span><span class="dl">'</span> <span class="nx">color</span> <span class="o">=</span><span class="dl">'</span><span class="s1">green</span><span class="dl">'</span><span class="o">/&gt;</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>In <code>Event.jsx</code>:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Replace the text within the <code>h5</code> element with <code>{props.event}</code>. The curly braces allow for JavaScript code to be evaluated within the HTML. Therefore, the event string that was passed to the <code>Event</code> component will replace the test text.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="o">&lt;</span><span class="nx">h5</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">event</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/h5</span><span class="err">&gt;
+</span></code></pre></div></div>
+</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI to Explore New Concepts</strong></summary><div class="well inset-text">
+<p>Highlight and right-click this code and choose <strong>Copilot &gt; Explain this</strong> to get an explanation about how this code works. You could also ask Copilot for additional examples by asking something like:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>Can you show me an example of accessing a prop for a video game web app?</p>
+</blockquote>
+<p></p></div></details></div>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>We can also use the props to set CSS attributes. Replace the <code>className</code> to <code>{'Event ' + props.color}</code>. This adds an additional <code>className</code> to the element that we can dynamically set the color of elements based on the color that you pass as a prop.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="o">&lt;</span><span class="nx">td</span> <span class="nx">className</span><span class="o">=</span><span class="p">{</span><span class="dl">'</span><span class="s1">Event </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">props</span><span class="p">.</span><span class="nx">color</span><span class="p">}</span><span class="o">&gt;</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>In <code>index.css</code>:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Create rules to style the <code>Event</code> components and set the background for the different colors that will be passed as props.</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>Make sure both your <code>index.css</code> and <code>Event.jsx</code> files are open, then ask Copilot to suggest some styles for your <code>Event</code> components and the colors that will be passed as props (for example, pink, blue, and green).</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>Can you suggest some styles for my Event component? I also need styles for a pink, blue, and green class to set the background color to custom vibrant colors.</p>
+</blockquote>
+<p>It may give you include styles you don't need or want right now. Review the code it suggests to make sure that it achieves the goals, and remove any extra code you don't need.</p>
+<p>If you're using ChatGPT, copy and paste your <code>Event</code> component code and <code>index.css</code> code into ChatGPT, then ask it the same question.</p>
+<p></p></div></details></div>
+<div class="alert alert-warning inset-text"><details><summary><strong>Curious what the exemplar uses? Check out our styles here ⤵️</strong></summary><div class="well inset-text">
+<div class="highlighter-rouge language-css"><div class="highlight"><pre class="codehilite"><code><span class="nc">.Event</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.Event</span> <span class="nt">h6</span><span class="o">,</span> <span class="nt">h5</span> <span class="p">{</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+  <span class="nl">align-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.pink</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.blue</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">190</span><span class="p">,</span> <span class="m">219</span><span class="p">,</span> <span class="m">229</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.green</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">202</span><span class="p">,</span> <span class="m">245</span><span class="p">,</span> <span class="m">222</span><span class="p">);</span>
+<span class="p">}</span> 
+</code></pre></div></div>
+<p></p></div></details></div>
+<p>📍 <strong>Checkpoint 5</strong>:  In the browser, you should now see the event with the event title and and green background on the Calendar React application:</p>
+<p><a href="/course_images/web102/lab1/checkpoint_5.png" target="_blank"><img src="/course_images/web102/lab1/checkpoint_5.png" title="Screenshot of implemented features from step 5" width="600" alt="Screenshot of implemented features from step 5" class="center-block" /></a></p>
+<hr />
+<h4><a class="anchor" id="heading-step-6-add-more-events" href="#heading-step-6-add-more-events"><span class="glyphicon glyphicon-link"></span></a>Step 6: Add More Events</h4>
+<p>In this step, you will add more events to the calendar.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ To add an event to the calendar, replace one of the <code>td</code> elements in the table body with an <code>Event</code> component. Be sure to pass a value for <code>event</code> and a <code>color</code>. Currently, we only have CSS rules for <code>green</code>, <code>blue</code>, and <code>pink</code>. For example:</div>
+</li>
+</ul>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="o">&lt;</span><span class="nx">tr</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">td</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">time</span><span class="dl">"</span><span class="o">&gt;</span><span class="mi">8</span> <span class="nx">am</span><span class="o">&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">Event</span> <span class="nx">event</span><span class="o">=</span><span class="dl">'</span><span class="s1">Starbucks ☕️</span><span class="dl">'</span> <span class="nx">color</span> <span class="o">=</span><span class="dl">'</span><span class="s1">green</span><span class="dl">'</span><span class="o">/&gt;</span>
+  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">Event</span> <span class="nx">event</span><span class="o">=</span><span class="dl">'</span><span class="s1">Yolk 🍳</span><span class="dl">'</span> <span class="nx">color</span> <span class="o">=</span><span class="dl">'</span><span class="s1">green</span><span class="dl">'</span><span class="o">/&gt;</span>
+  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/tr</span><span class="err">&gt;
+</span>
+<span class="o">&lt;</span><span class="nx">tr</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">td</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">time</span><span class="dl">"</span><span class="o">&gt;</span><span class="mi">9</span> <span class="nx">am</span><span class="o">&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">Event</span> <span class="nx">event</span><span class="o">=</span><span class="dl">'</span><span class="s1">Subway 🚊</span><span class="dl">'</span> <span class="nx">color</span> <span class="o">=</span><span class="dl">'</span><span class="s1">pink</span><span class="dl">'</span><span class="o">/&gt;</span>
+  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">Event</span> <span class="nx">event</span><span class="o">=</span><span class="dl">'</span><span class="s1">The Bean 🫘</span><span class="dl">'</span> <span class="nx">color</span> <span class="o">=</span><span class="dl">'</span><span class="s1">blue</span><span class="dl">'</span><span class="o">/&gt;</span>
+<span class="o">&lt;</span><span class="sr">/tr</span><span class="err">&gt;
+</span><span class="p">...</span>
+</code></pre></div></div>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>You could ask Copilot to help you with these updates. Try doing one or two on your own, then ask Copilot to replace additional <code>td</code> elements with <code>Event</code> components.</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>I have updated some of the td elements with Event components. Can you update 3 more td elements with Event components? Right now, I only have CSS rules for green, blue, and pink, so only use these for the color prop.</p>
+</blockquote>
+<p>If you're using ChatGPT, copy and paste your <code>Event</code> component code into ChatGPT, then give it the same task.</p>
+<p></p></div></details></div>
+<p>📍 <strong>Checkpoint 6</strong>:  In the browser, you should now  the events you added to the calendar with the event title and and background:</p>
+<p><a href="/course_images/web102/lab1/checkpoint_6.png" target="_blank"><img src="/course_images/web102/lab1/checkpoint_6.png" title="Screenshot of implemented features from step 6" width="600" alt="Screenshot of implemented features from step 6" class="center-block" /></a></p>
+<div class="alert alert-success inset-text">
+🎉 Congratulations, you've completed your first lab! 🎉
+</div>
+<p>If you have time left over, continue on to the stretch features to customize and improve your app!</p>
+<hr />
+<h3><a class="anchor" id="1-heading-stretch-features" href="#1-heading-stretch-features"><span class="glyphicon glyphicon-link"></span></a>Stretch Features</h3>
+<h4><a class="anchor" id="heading-step-7-add-the-location-to-event" href="#heading-step-7-add-the-location-to-event"><span class="glyphicon glyphicon-link"></span></a>Step 7: Add the Location to Event</h4>
+<p>In this step, you will add pass another prop to the Event component with the location of the event.</p>
+<p>In the <code>Event</code> component you added to the Calendar:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Create a <code>location</code> prop and set it to string with the location name or address. For example:</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="o">&lt;</span><span class="nx">Event</span> <span class="nx">event</span><span class="o">=</span><span class="dl">'</span><span class="s1">Fancy Dinner 🎩</span><span class="dl">'</span> <span class="nx">location</span><span class="o">=</span><span class="dl">'</span><span class="s1">Maple &amp; Ash</span><span class="dl">'</span><span class="o">/&gt;</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>In <code>Event.jsx</code>:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Add the <code>{props.location}</code> in an <code>h6</code> element.</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>Try asking Copilot to help you update your code. To improve the accuracy of the generated code, take the task you need to complete and decompose it into the steps you want Copilot to take. For example:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>Update my Event component to do the following:</p>
+<ol>
+<li>Create an h6 element</li>
+<li>Between the h6 tags, write {props.location}</li>
+</ol>
+</blockquote>
+<p>If you're using ChatGPT, copy and paste your <code>Event</code> component code into ChatGPT, then give it the same task.</p>
+<p></p></div></details></div>
+<p>📍 <strong>Checkpoint 6</strong>:  In the browser, you should now see the events you added to the calendar with the event title and and background:</p>
+<p><a href="/course_images/web102/lab1/stretch.png" target="_blank"><img src="/course_images/web102/lab1/stretch.png" title="Screenshot of implemented stretch feature" width="600" alt="Screenshot of implemented stretch feature" class="center-block" /></a></p>
+<div class="alert alert-success inset-text">
+🎉 Congratulations 🎉
+<p>You've completed your first lab AND stretch goals! 🚀<br />
+</p></div>
+<div class="alert alert-info inset-text">
+<strong>💡 Tip:</strong> Remember to come back and reference this lab when you need to do similar things in your project!
+</div>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assignment Submission Summary</h2><p>The following is the summary of your scored submissions for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">13 / 12</span><strong>Score</strong></li><li class="list-group-item"><span class="label label-primary label-badge">108%</span><strong>Percent Score</strong></li><li class="list-group-item"><span class="label label-badge label-success">Jan 28 at 8:13pm EST</span><strong>First Submitted At</strong></li></ul><h4>Course Submission Scores Breakdown</h4><p>The following aggregates the scores of all students enrolled in your class group:</p><table class="table table-striped"><thead><tr><th>Min</th><th>Mean</th><th>Max</th></tr></thead><tbody><tr><td>9</td><td>13</td><td>14</td></tr></tbody></table></div><div class="col-md-2"><a href="https://github.com/ccabreragarc/Project-1-Community-Board" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;Project Repo</a><img src="https://submissions.us-east-1.linodeobjects.com/web102/nu5sYAal.gif" width="250" alt="Nu5syaal" /></div></div></div></div></div><div class="tab-pane" id="projects"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"><span class="feedback section-action"><a href="#modal" class="feedback-link" title="Submit Feedback" data-toggle="tooltip" data-placement="right" data-container="body"><span title="" class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></span><span class="section-text" aria-hidden="true"><span aria-hidden="true" class="glyphicon glyphicon-ok glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;Submitted<br /><time class="timeago" datetime="2024-01-28T17:13:03.669391-0800">2024-01-28T17:13:03.669391-0800</time></span><span class="section-action"><button class="btn btn-primary" onClick="LightBox.showLightBoxWithIds('lightbox-projects', 'form-projects')"><span class="glyphicon glyphicon-open" aria-hidden="true"></span>&nbsp;Submit&nbsp;Again</button></span>
+<div class="lightbox" id="lightbox-projects"><form action="/submissions/create_or_update_submission" accept-charset="UTF-8" class="form-horizontal form-submission" id="form-projects" method="post"><div class="title"></div><button aria-label="Close" class="close" type="button"><span aria-hidden="true"> &times;</span></button><h2>Submission</h2><p>Please enter your assignment submission info. After you submit, you can keep working and resubmit at any time.</p><label>GitHub Project URL</label><div class="form-group has-feedback"><div class="col-sm-12"><input type="text" name="git_repo_url" value="https://github.com/ccabreragarc/Project-1-Community-Board" placeholder="https://github.com/username/Twitter" required="required" class="form-control" pattern="^https?:\/\/github.com\/.{2,}?\/.{2,}$" data-error="Please enter the url to your GitHub Repo (Example: https://github.com/username/TwitterLite)" /><span aria-hidden="true" class="glyphicon form-control-feedback"></span><div class="help-block with-errors"></div></div></div><label>GIF URL <span id="upload-status"><span class="light">(Drag a file here to upload. It'll try to convert your video to a GIF.)</span><img class="spinner" src="/images/ajax-loader.gif" /></span></label><div class="form-group has-feedback"><div class="col-sm-12"><input type="text" name="gif_remote_url" id="submission_gif_remote_url" value="https://submissions.us-east-1.linodeobjects.com/web102/nu5sYAal.gif" placeholder="https://i.imgur.com/xyz.gif" required="required" class="form-control" pattern="^https?:\/\/.+?\/.+?\.(gifv?)(.+)?" data-error="Please enter a link to your GIF (Example: https://i.imgur.com/U3a7L.gif)" /><span aria-hidden="true" class="glyphicon form-control-feedback"></span><div class="help-block with-errors"></div></div></div><label>Hours Spent</label><div class="form-group"><div class="col-sm-12"><input type="number" name="hours_spent" value="4.0" placeholder="Number of hours" required="required" class="form-control" min="0" max="99" step="0.1" /></div></div><label>Notes</label><div class="form-group"><div class="col-sm-12"><textarea name="notes" placeholder="Any additional notes" class="form-control noresize" rows="2">
+</textarea></div></div><div class="form-group"><div class="col-sm-12 mt-2"><input type="submit" value="Submit" class="btn btn-primary pull-right" /></div></div><input type="hidden" name="course" value="web102" /><input type="hidden" name="unit" value="1" /><input type="hidden" name="id" value="340659" /><input type="hidden" name="assignment" value="5442" /><input type="hidden" name="redirect_anchor" value="projects" /></form></div></div><!--- 
+This is a template of a project for 2022 Codepath course development.
+In this course, projects are asynchronous, student-driven assignments. 
+
+Note: There is NO # h1 tag, because the course portal uses h1 to render the course name automatically.  
+Pages should always start with ## h2.
+-->
+<!--- This code will automatically pull the assignment due date for project number X -->
+<div class="alert alert-warning inset-text">
+📬 Submit this assignment by <strong><span data-time="2024-01-28T23:59:00-05:00" data-format="longdatetime">Sunday, January 28th at 11:59pm EST</span></strong> using the <em>Submit</em> button 👉
+</div>
+<h2><a class="anchor" id="heading-project-1-community-board" href="#heading-project-1-community-board"><span class="glyphicon glyphicon-link"></span></a>Project 1: Community Board</h2>
+<h3><a class="anchor" id="heading-overview" href="#heading-overview"><span class="glyphicon glyphicon-link"></span></a>Overview</h3>
+<p>For this project, you will create an events or resources board for your community! Your board should have a unique purpose, such as displaying a list of scheduled games for a sports team or links to help users learn more about software engineering. On each card of your community board, you should display some information about the event or resource.</p>
+<p><em>View an exemplar of the project <a href="https://heroic-pixie-6d7f91.netlify.app/" target="_blank">here</a>!</em></p>
+<h3><a class="anchor" id="heading-goals" href="#heading-goals"><span class="glyphicon glyphicon-link"></span></a>🎯 Goals</h3>
+<p>By the end of this assignment you will be able to...</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Initialize a new React application with Vite</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Create a functional React component</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Define and pass props to components</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Apply CSS styling to React components</div>
+</li>
+</ul>
+<h3><a class="anchor" id="heading-required-features" href="#heading-required-features"><span class="glyphicon glyphicon-link"></span></a>Required Features</h3>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Create a unique theme for events or resources relevant to a specific community</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Display at least 10 unique resources or events in a responsive card format</div>
+</li>
+</ul>
+<h4><a class="anchor" id="heading-screenshot" href="#heading-screenshot"><span class="glyphicon glyphicon-link"></span></a>Screenshot</h4>
+<p>A simple version of the app with all the required features implemented:</p>
+<div class="alert alert-success inset-text">
+<a href="/course_images/web102/project1/screenshot.png" target="_blank"><img src="/course_images/web102/project1/screenshot.png" title="Screenshot of app with core features implemented" width="600" alt="Screenshot of app with core features implemented" class="center-block" /></a>
+</div>
+<h4><a class="anchor" id="heading-stretch-features" href="#heading-stretch-features"><span class="glyphicon glyphicon-link"></span></a>Stretch Features</h4>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Add buttons or links to a related resource on each card component</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Make the site responsive for both desktop and mobile formats</div>
+</li>
+</ul>
+<h3><a class="anchor" id="heading-resources" href="#heading-resources"><span class="glyphicon glyphicon-link"></span></a>Resources</h3>
+<!--- Links to resources go here -->
+<ul>
+<li><a href="https://vitejs.dev/guide/" target="_blank">Getting Started with Vite</a></li>
+<li><a href="https://reactjs.org/docs/components-and-props.html" target="_blank">Components and Props</a></li>
+<li><a href="https://reactjs.org/tutorial/tutorial.html#passing-data-through-props" target="_blank">Passing Data Through Props</a></li>
+</ul>
+<h3><a class="anchor" id="heading-hints" href="#heading-hints"><span class="glyphicon glyphicon-link"></span></a>💡 Hints</h3>
+<!--- Example Hint - remove or modify as needed -->
+<ul>
+<li>Help! I don't know where to start!
+<ul>
+<li>The first step for all your new projects will probably look similar: initializing with Vite. Check Lab 1 for a refresher on how to get started from scratch.</li>
+<li>Refresh your memory of this unit's concepts using the lab. What code will be similar? What do you need to change?</li>
+</ul>
+</li>
+<li>I'm stuck on something!
+<ul>
+<li>Don't just skip the Resources section!</li>
+<li>Still need a little extra help getting started or running into an error?  Try posting in the <a href="http://codepath.slack.com/" target="_blank">Class Slack Channel</a>.</li>
+</ul>
+</li>
+</ul>
+<!--- This dynamically inserts the submission guidelines, as specified in another file. -->
+<div class="alert alert-warning inset-text">
+📣 <strong>Submission Guidelines</strong>: For more details on submission instructions, follow the guidelines on the <a href="/courses/web102/pages/submitting_coursework" class="internal" alt="Submitting Coursework" title="Submitting Coursework" target="_blank">Submitting Coursework</a> page.
+<ul>
+<li>Make sure you are adding and committing files in git as you complete features and milestones.</li>
+<li>Be sure to <strong>include a README</strong> containing a GIF walkthrough of your project.</li>
+<li>Use this <a href="/snippets/web102/readme_templates/project1_readme_template?raw=true" target="_blank">README TEMPLATE</a>.
+<ul>
+<li>It is important that you follow the same layout as the README template so that we can easily access your work.</li>
+<li>Be sure to check off each feature that is implemented in your submission by changing <code>[ ]</code> to <code>[x]</code>. We won't be able to assign points if a feature is unchecked.</li>
+</ul>
+</li>
+</ul>
+<p></p></div>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assignment Submission Summary</h2><p>The following is the summary of your scored submissions for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">13 / 12</span><strong>Score</strong></li><li class="list-group-item"><span class="label label-primary label-badge">108%</span><strong>Percent Score</strong></li><li class="list-group-item"><span class="label label-badge label-success">Jan 28 at 8:13pm EST</span><strong>First Submitted At</strong></li></ul><h4>Course Submission Scores Breakdown</h4><p>The following aggregates the scores of all students enrolled in your class group:</p><table class="table table-striped"><thead><tr><th>Min</th><th>Mean</th><th>Max</th></tr></thead><tbody><tr><td>9</td><td>13</td><td>14</td></tr></tbody></table></div><div class="col-md-2"><a href="https://github.com/ccabreragarc/Project-1-Community-Board" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;Project Repo</a><img src="https://submissions.us-east-1.linodeobjects.com/web102/nu5sYAal.gif" width="250" alt="Nu5syaal" /></div></div></div></div></div><div class="tab-pane" id="resources"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"><span class="feedback section-action"><a href="#modal" class="feedback-link" title="Submit Feedback" data-toggle="tooltip" data-placement="right" data-container="body"><span title="" class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></span></div><h2><a class="anchor" id="heading-resources" href="#heading-resources"><span class="glyphicon glyphicon-link"></span></a>Resources</h2>
+<p>A list of helpful links relevant to this unit.</p>
+<h4><a class="anchor" id="heading-hints-troubleshooting" href="#heading-hints-troubleshooting"><span class="glyphicon glyphicon-link"></span></a>Hints &amp; Troubleshooting</h4>
+<p>Getting stuck or not sure how to implement a specific feature? Check out the "Hints" section at the bottom of the <a href="#!projects">✏️ Project Instructions</a>.</p>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assignment Submission Summary</h2><p>The following is the summary of your scored submissions for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">13 / 12</span><strong>Score</strong></li><li class="list-group-item"><span class="label label-primary label-badge">108%</span><strong>Percent Score</strong></li><li class="list-group-item"><span class="label label-badge label-success">Jan 28 at 8:13pm EST</span><strong>First Submitted At</strong></li></ul><h4>Course Submission Scores Breakdown</h4><p>The following aggregates the scores of all students enrolled in your class group:</p><table class="table table-striped"><thead><tr><th>Min</th><th>Mean</th><th>Max</th></tr></thead><tbody><tr><td>9</td><td>13</td><td>14</td></tr></tbody></table></div><div class="col-md-2"><a href="https://github.com/ccabreragarc/Project-1-Community-Board" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;Project Repo</a><img src="https://submissions.us-east-1.linodeobjects.com/web102/nu5sYAal.gif" width="250" alt="Nu5syaal" /></div></div></div></div></div><div class="tab-pane" id="career"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"><span class="feedback section-action"><a href="#modal" class="feedback-link" title="Submit Feedback" data-toggle="tooltip" data-placement="right" data-container="body"><span title="" class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></span></div><h2><a class="anchor" id="heading-building-a-great-resume" href="#heading-building-a-great-resume"><span class="glyphicon glyphicon-link"></span></a>Building a Great Resume</h2>
+<p>As you prepare to apply for internships or jobs, this is a great time to improve and update your resume.</p>
+<h3><a class="anchor" id="heading-why-is-a-resume-important" href="#heading-why-is-a-resume-important"><span class="glyphicon glyphicon-link"></span></a>Why is a resume important?</h3>
+<p>Your resume is a marketing tool that aims to convey your relevant skills, education and experiences for a specific position.</p>
+<p>It might seem like a simple document, but a resume is usually the first thing a recruiter will read about you, and it’s crucial to make a good impression.</p>
+<p>Recruiters spend an average of just six seconds reviewing a resume so you have a very small window of time to make sure they find what they are looking for.</p>
+<h3><a class="anchor" id="heading-getting-started-with-a-resume" href="#heading-getting-started-with-a-resume"><span class="glyphicon glyphicon-link"></span></a>Getting Started With A Resume</h3>
+<p>If you don’t already have a resume, you can <a href="https://docs.google.com/document/d/1TDGkSD5l--GjKu56jw6frHmjr075QHbr_wfma_gmv8s/edit#heading=h.a6zf6udxi9hp" target="_blank">find templates at the end of this document</a>.</p>
+<p><a href="https://drive.google.com/drive/folders/1pBf49-RzMFOPoBsc-t-S6PvHNRuT6CG5" target="_blank">Check out examples of real student resumes for inspiration.</a></p>
+<h3><a class="anchor" id="heading-key-guidelines" href="#heading-key-guidelines"><span class="glyphicon glyphicon-link"></span></a>Key guidelines</h3>
+<div class="alert alert-warning inset-text">
+<a href="https://docs.google.com/document/d/1TDGkSD5l--GjKu56jw6frHmjr075QHbr_wfma_gmv8s/edit#heading=h.a6zf6udxi9hp" target="_blank">Work through our full resume worksheet!</a>
+</div>
+<h4><a class="anchor" id="heading-things-to-include" href="#heading-things-to-include"><span class="glyphicon glyphicon-link"></span></a>Things to include:</h4>
+<ul>
+<li>Include the languages, frameworks, platforms and tools that you are most familiar with.</li>
+<li>Include 3-4 projects that showcase things you’re passionate about. (Prioritize your side projects over academic projects.) Include a link for each project if you can.</li>
+<li>Include links to your GitHub, LinkedIn and a website (if applicable.)</li>
+<li>If either your cumulative GPA or your major GPA is close to or above 3.5, include it!</li>
+<li>Look at the job descriptions you are applying for and make sure that you have included the skills/experiences they are looking for.</li>
+</ul>
+<h4><a class="anchor" id="heading-make-your-resume-easy-to-scan" href="#heading-make-your-resume-easy-to-scan"><span class="glyphicon glyphicon-link"></span></a>Make your resume easy to scan:</h4>
+<ul>
+<li>Make your name BIG (16-20pt font).</li>
+<li>For most of the document, use a standard font in size 10 to 12pt. Standard formats are more readable by resume-parsing programs and easier to skim by recruiters.</li>
+<li>Important content should be higher up. For a student or new grad, resumes are one page and the order of importance is usually Education &gt; Experience &gt; Projects &gt; Skills.</li>
+<li>Highlight company names, job titles, start/end dates, school name, major and project titles.</li>
+<li>We recommend no more than two different font sizes and two different colors per resume.</li>
+<li>Bullet points (real ones, not hyphens) are your friend. Text walls discourage readers.</li>
+</ul>
+<h4><a class="anchor" id="heading-everything-on-your-resume-should-have-a-clear-purpose" href="#heading-everything-on-your-resume-should-have-a-clear-purpose"><span class="glyphicon glyphicon-link"></span></a>Everything on your resume should have a clear purpose:</h4>
+<ul>
+<li>Objective and Summary are generally unnecessary.</li>
+<li>Descriptions should say something tangible. <em>“Exceptional team player”</em> is less powerful than <em>“Increased user conversion rates by 20%”</em>. This should describe the project specifically and quantify impact if possible.</li>
+<li>If your bullet points could have the same impact in fewer words or simpler terms, you should probably edit them.</li>
+<li>Don’t include anything you wouldn’t be comfortable answering questions about. Most people make this mistake when listing their skills.</li>
+<li>Never, ever include anything that isn’t true.</li>
+</ul>
+<h3><a class="anchor" id="heading-getting-feedback" href="#heading-getting-feedback"><span class="glyphicon glyphicon-link"></span></a>Getting Feedback</h3>
+<p>After finishing your resume, have your peers review it. Ask them to be honest and harsh. You can also share it on the #resume-feedback channel in the CodePath Slack Workspace!</p>
+<p>Check out this article if you want <a href="https://www.freecodecamp.org/news/writing-a-killer-software-engineering-resume-b11c91ef699d/" target="_blank">even more tips.</a></p>
+<p>Just following these simple points can mean the difference between a resume that holds you back and a resume that works in your favor.</p>
+<p>Of course, there is another important source of information for recruiters. We’ll be focusing on LinkedIn next unit!</p>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assignment Submission Summary</h2><p>The following is the summary of your scored submissions for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">13 / 12</span><strong>Score</strong></li><li class="list-group-item"><span class="label label-primary label-badge">108%</span><strong>Percent Score</strong></li><li class="list-group-item"><span class="label label-badge label-success">Jan 28 at 8:13pm EST</span><strong>First Submitted At</strong></li></ul><h4>Course Submission Scores Breakdown</h4><p>The following aggregates the scores of all students enrolled in your class group:</p><table class="table table-striped"><thead><tr><th>Min</th><th>Mean</th><th>Max</th></tr></thead><tbody><tr><td>9</td><td>13</td><td>14</td></tr></tbody></table></div><div class="col-md-2"><a href="https://github.com/ccabreragarc/Project-1-Community-Board" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;Project Repo</a><img src="https://submissions.us-east-1.linodeobjects.com/web102/nu5sYAal.gif" width="250" alt="Nu5syaal" /></div></div></div></div></div></div></div></div></div><div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="feedback-modal" role="dialog" tabindex="-1"><div class="modal-dialog" role="document"><div class="modal-content"><form action="/feedback/create.js" accept-charset="UTF-8" id="feedback-form" method="post" data-remote="true"><div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="exampleModalLabel">Give us feedback on this page</h4><p class="info"><span aria-hidden="true" class="glyphicon glyphicon-info-sign"></span><span>All fields are optional, but the more detailed your feedback the better.</span></p></div><div class="modal-body"><input type="hidden" name="course" value="WEB102 | Intermediate Web Development" /><input type="hidden" name="cohort" value="For-Credit-Intermediate-Web-Development-Spring-2024" /><input type="hidden" name="location" value="Florida Atlantic University" /><input type="hidden" name="role" value="Participant" /><input type="hidden" name="unit" value="1" /><input type="hidden" name="page" /><input type="hidden" name="tab" id="feedback-input-tab" /><input type="hidden" name="iamnotabot" id="iamnotabot" value="" /><div class="row"><div class="col-md-6"><div class="form-group"><label>Reason</label><select class="form-control" name="reason"><option value=""></option><option value="rate">Rate this section</option><option value="suggest">Share a suggestion or frustration</option><option value="report">Report outdated or broken content</option></select></div></div><div class="col-md-6"><div class="form-group"><label>Rating</label><input class="rating" data-animate="false" data-show-caption="false" data-show-clear="false" data-size="sm" max="5" min="0" name="rating" step="1" type="number" /></div></div></div><div class="form-group"><label>Feedback</label><textarea class="form-control" name="feedback" rows="3"></textarea></div><div class="checkbox"><label><input name="needs_review" type="checkbox" value="true">Page needs review?</input></label></div></div><div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" type="button">Close</button><button class="btn btn-primary" type="submit">Submit feedback</button></div></form></div></div></div></body><script src="/assets-compiled/application.js?v=5955841a"></script>  <script>
+    $(document).data("gaid", 'G-C6WBPLRZK9')
+  </script>
+</html>
